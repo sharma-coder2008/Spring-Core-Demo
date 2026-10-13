@@ -16,7 +16,7 @@ public class Main
         OrderService order = context.getBean(OrderService.class);
         order.placeOrder();
 
-        CartService cs = new CartService();
+        CartService cs = context.getBean(CartService.class);
         cs.cart();
     }
 }
