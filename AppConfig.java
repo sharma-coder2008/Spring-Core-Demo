@@ -14,7 +14,7 @@ public class AppConfig
     }
 
     @Bean
-    public CartService createCartService
+    public CartService createCartService()
     {
         return new CartService();
     }
