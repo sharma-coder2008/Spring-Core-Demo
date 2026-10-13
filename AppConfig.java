@@ -12,4 +12,10 @@ public class AppConfig
     {
         return new User("Riyansh", 18);
     }
+
+    @Bean
+    public CartService createCartService
+    {
+        return new CartService();
+    }
 }
