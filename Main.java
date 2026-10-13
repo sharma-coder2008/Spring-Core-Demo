@@ -11,8 +11,8 @@ public class Main
 
         System.out.println("User: ");
         User us = context.getBean(User.class);
+        System.out.println(us.getName());
 
-        
         OrderService order = context.getBean(OrderService.class);
         order.placeOrder();
 
