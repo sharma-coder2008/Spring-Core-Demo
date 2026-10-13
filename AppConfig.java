@@ -7,5 +7,9 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan
 public class AppConfig
 {
-    //empty
+    @Bean
+    public User createUser()
+    {
+        return new User("Riyansh", 18);
+    }
 }
