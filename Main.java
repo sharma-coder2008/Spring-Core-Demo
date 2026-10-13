@@ -9,6 +9,10 @@ public class Main
     {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
+        System.out.println("User: ");
+        User us = context.getBean(User.class);
+
+        
         OrderService order = context.getBean(OrderService.class);
         order.placeOrder();
     }
