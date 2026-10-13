@@ -10,7 +10,14 @@ public class OrderService
 {
     Payment pay;
 
-    public OrderService(@Qualifier("up") Payment pay)
+    /*Through Setter
+    @Autowired
+    public void setPay(Payment pay) {
+        this.pay = pay;
+    }
+     */
+
+    public OrderService(Payment pay)
     {
         this.pay = pay;
     }
