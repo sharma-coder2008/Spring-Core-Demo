@@ -10,7 +10,7 @@ public class OrderService
 {
     Payment pay;
 
-    public OrderService(@Qualifier("upiPayment") Payment pay)
+    public OrderService(@Qualifier("up") Payment pay)
     {
         this.pay = pay;
     }
